@@ -373,7 +373,6 @@ class Master_minds:
         while not Homepage_loop_end:
             pos_x, pos_y = 45, 234
             mouse_pos = self.Pygame.mouse.get_pos()
-            print("mouse pppppppppppppppp", mouse_pos)
             #self.Pygame.draw.
             screen.fill(self.background_color)
             screen.blit(self.Home_page_bgr, (0, 0))
@@ -445,7 +444,6 @@ class Master_minds:
         color = self.color_generator()
         while not AYS_page_end:
             mouse_pos = self.Pygame.mouse.get_pos()
-            print("mouse_pos", mouse_pos)
             screen.fill(self.background_color)
             screen.blit(self.End_page_bgr, (0, 0))
             self.Pygame.draw.rect(screen, self.black, self.Pygame.Rect(150, 205, 218, 40))
@@ -499,7 +497,6 @@ class Master_minds:
         while not win_page_end:
             posx, posy = 149,122
             mouse_pos = self.Pygame.mouse.get_pos()
-            print(mouse_pos)
             screen.fill(self.background_color)
             screen.blit(self.WIn_page_bgr, (0, 0))
             for ball in current_quad:
@@ -551,7 +548,6 @@ class Master_minds:
         while not loose_page_end:
             posx, posy = 149, 122
             mouse_pos = self.Pygame.mouse.get_pos()
-            print(mouse_pos)
             screen.fill(self.background_color)
             screen.blit(self.Loose_page_bgr, (0,0))
             for ball in current_quad:
@@ -602,10 +598,7 @@ class Master_minds:
         total_hands = 10
         y_limit_hint = 508
         y_limit_block = 508 - 50
-
-        print("hello")
         screen = self.Create_Window(500, 600, self.background_color, "Master_Minds")
-
         # Displaying the home page
         self.Home_page_maker(screen)
 
